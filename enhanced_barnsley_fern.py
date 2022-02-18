@@ -44,9 +44,6 @@ def draw_fern(pen):
         else:
             tempx = 0.85 * x + 0.04 * y + 0.075
             tempy = -0.04 * x + 0.850 * y + 0.180
-        if r == 100:
-            r = 0
-        r += 1
         x, y = tempx, tempy
         pen.setpos(x * args.scale - args.scale // 2, y * args.scale - args.scale // 2)
         pen.dot(1)
